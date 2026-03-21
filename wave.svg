@@ -62,9 +62,9 @@
 
   <g class="moving-container">
     <!-- Connecting adjacent waves precisely at 500px -->
-    <use href="#waveSegment" x="0" y="0" width="500" height="180" />
-    <use href="#waveSegment" x="500" y="0" width="500" height="180" />
-    <use href="#waveSegment" x="1000" y="0" width="500" height="180" />
-    <use href="#waveSegment" x="1500" y="0" width="500" height="180" />
+    <use href="#waveSegment" x="0" y="0" width="500" height="60" />
+    <use href="#waveSegment" x="500" y="0" width="500" height="60" />
+    <use href="#waveSegment" x="1000" y="0" width="500" height="60" />
+    <use href="#waveSegment" x="1500" y="0" width="500" height="60" />
   </g>
 </svg>
