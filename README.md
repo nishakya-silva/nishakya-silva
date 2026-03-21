@@ -9,7 +9,7 @@
 
 <div style="display: flex; justify-content: center; width: 100%; overflow: hidden; background: #0b0e14; padding: 10px 0;">
   <!-- Scaling down: Set max-width to 600px for a more compact look -->
-  <img src="./wave.svg" style="width: 100%; max-width: 600px; height: auto; opacity: 0.9;" />
+  <img src="./wave.svg" style="width: 100%; max-width: 300px;" />
 </div>
 
 >
