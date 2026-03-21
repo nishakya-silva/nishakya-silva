@@ -45,17 +45,16 @@
 
 ## 👀 Profile Views
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=0e75b6&style=flat"/>
+  <img src="https://komarev.com/ghpvc/?username=nishakya-silva&label=Profile%20Views&color=0e75b6&style=flat"/>
 </p>
 
 ---
 
 ## 🐍 Contribution Snake
-![snake gif](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://github.com/nishakya-silva/nishakya-silva/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
-## ✨ Footer Animation
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C2FF,100:6A00FF&height=120&section=footer"/>
 </p>
