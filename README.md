@@ -5,30 +5,38 @@
 </p>
 
 <p align="center">
-  <i>learning quietly, like the ocean shaping the shore.</i>
-</p>
-
----
-
-<p align="center">
-<span title="sometimes the best code is the one you don't see">Hover here for a secret</span>
+  <i>"Learning is like surfing—ride the waves, feel the flow."</i>
 </p>
 
 ---
 
 <pre>
-       ~    ~  ~      ~
-   ~        ~     ~     ~
-~    ~  ~        ~  ~
-       ~      ~       ~
+        ~       ~       ~
+   ~            ~        ~
+       🏄‍♀️
+~       ~   ~       ~
+       ~        ~      ~
+</pre>
+
+<pre>
+       ~        ~       ~
+    ~        🏄‍♀️     ~
+ ~        ~       ~      ~
+      ~        ~      ~
+</pre>
+
+<pre>
+    ~       ~       ~
+       ~       ~      ~
+    ~        🏄‍♀️
+~       ~        ~      ~
+       ~       ~       ~
 </pre>
 
 ---
 
 Computer Science Undergraduate  
 Drawn to systems, patterns, and calm complexity  
-
----
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:145DA0,100:0A1F44&height=120&section=footer"/>
