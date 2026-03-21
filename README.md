@@ -1,43 +1,27 @@
-# Nishakya Silva
+# <span id="typing"></span>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1F44,100:145DA0&height=180&section=header&text=&fontSize=0"/>
-</p>
+<div style="font-family: monospace; white-space: pre; line-height: 1; font-size: 10px; display: inline-block;" id="wave">
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣰⠟⠉⠀⠀⠉⠙⠻⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢏⠀⠈⠉⠲⣄⠀⠀⠈⢻⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⠂⠀⠀⠀⢹⡇⠀⠀⠀⠹⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣀⣠⣤⣀⣀⣀⣀⣀⣠⣿⠃⠀⠀⠀⠀⠈⠻⣦⣀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠒⠒⠀
+</div>
 
-<p align="center">
-  <i>"Learning is like surfing—ride the waves, feel the flow."</i>
-</p>
-
----
-
-<pre>
-        ~       ~       ~
-   ~            ~        ~
-       🏄‍♀️
-~       ~   ~       ~
-       ~        ~      ~
-</pre>
-
-<pre>
-       ~        ~       ~
-    ~        🏄‍♀️     ~
- ~        ~       ~      ~
-      ~        ~      ~
-</pre>
-
-<pre>
-    ~       ~       ~
-       ~       ~      ~
-    ~        🏄‍♀️
-~       ~        ~      ~
-       ~       ~       ~
-</pre>
-
----
-
-Computer Science Undergraduate  
-Drawn to systems, patterns, and calm complexity  
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:145DA0,100:0A1F44&height=120&section=footer"/>
-</p>
+<script>
+const text = "Nishakya Silva : Always learning, always evolving";
+let i = 0;
+const typingEl = document.getElementById("typing");
+function typeLetter() {
+  if (i < text.length) {
+    typingEl.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeLetter, 150);
+  } else {
+    // after typing, show wave
+    document.getElementById("wave").style.display = "inline-block";
+  }
+}
+typeLetter();
+</script>
