@@ -20,14 +20,14 @@
 
 ## 📊 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=radical" height="165"/>
-  <img src="https://streak-stats.demolab.com/?user=YOUR_USERNAME&theme=radical" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=nishakya-silva&show_icons=true&theme=radical" height="165"/>
+  <img src="https://streak-stats.demolab.com/?user=nishakya-silva&theme=radical" height="165"/>
 </p>
 
 ---
 
 ## 📈 Activity Graph
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=react-dark)
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=nishakya-silva&theme=react-dark)
 
 ---
 
