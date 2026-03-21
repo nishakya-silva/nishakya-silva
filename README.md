@@ -1,5 +1,3 @@
-# <h1 align="center">✧ Nishakya Silva ✧</h1>
-
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=A97BFF&center=true&vCenter=true&width=600&lines=Nishakya+Silva+:;Always+learning,+always+evolving" alt="Typing SVG" />
 </p>
