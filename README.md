@@ -7,9 +7,10 @@
 
 <div align="center">
 
-<div style="display: flex; justify-content: center; width: 100%; overflow: hidden; background: #0b0e14; padding: 20px 0;">
-  <!-- Use width: 100% to let the wave fill the whole screen space -->
-  <img src="./wave.svg" style="width: 100%; max-width: 1200px; height: auto;" />
+<div style="display: flex; justify-content: center; width: 100%; overflow: hidden; background: #0b0e14; padding: 10px 0;">
+  <!-- Scaling down: Set max-width to 600px for a more compact look -->
+  <img src="./wave.svg" style="width: 100%; max-width: 600px; height: auto; opacity: 0.9;" />
 </div>
+
 >
 
