@@ -5,9 +5,31 @@
 </p>
 
 <p align="center">
-  <i>building quietly, like the ocean shaping the shore.</i>
+  <i>learning quietly, like the ocean shaping the shore.</i>
 </p>
 
 ---
 
-## 
+<p align="center">
+<span title="sometimes the best code is the one you don't see">Hover here for a secret</span>
+</p>
+
+---
+
+<pre>
+       ~    ~  ~      ~
+   ~        ~     ~     ~
+~    ~  ~        ~  ~
+       ~      ~       ~
+</pre>
+
+---
+
+Computer Science Undergraduate  
+Drawn to systems, patterns, and calm complexity  
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:145DA0,100:0A1F44&height=120&section=footer"/>
+</p>
