@@ -8,6 +8,6 @@
 <div align="center">
 
 <div align="center">
-  <img src="./wave.svg" width="600" />
+  <img src="./wave.svg" width="1000" />
 </div>
 
