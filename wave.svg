@@ -1,10 +1,11 @@
 <svg width="1000" height="180" viewBox="0 0 1000 180" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#3498db;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
-    </linearGradient>
+  <stop offset="0%" style="stop-color:#ade8f4;stop-opacity:1" /> <!-- Lightest Ocean Blue -->
+  <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" /> <!-- White Peak -->
+  <stop offset="100%" style="stop-color:#ade8f4;stop-opacity:1" /> <!-- Lightest Ocean Blue -->
+</linearGradient>
+
 
     <!-- Cycle width set to 500px for smaller, tighter connections -->
     <symbol id="waveSegment" viewBox="0 0 500 180">
