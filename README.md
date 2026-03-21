@@ -33,11 +33,8 @@
 
 ## 🌐 Connect With Me
 <p align="center">
-  <a href="https://linkedin.com/in/YOUR_LINK">
+  <a href="www.linkedin.com/in/nishakya-silva-b0348130a">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"/>
-  </a>
-  <a href="https://your-portfolio-link.com">
-    <img src="https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=web"/>
   </a>
 </p>
 
