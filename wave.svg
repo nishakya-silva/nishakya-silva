@@ -5,23 +5,50 @@
       <stop offset="50%" style="stop-color:#3498db;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
     </linearGradient>
+
+    <!-- Cycle width set to 635 to match the character length -->
+    <symbol id="waveSegment" viewBox="0 0 635 260">
+      <text class="line l1" x="0" y="30">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⠾⠿⠿⠯⣷⣄⡀</text>
+      <text class="line l2" x="0" y="55">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣾⠛⠁⠀⠀⠀⠀⠀⠀⠈⢻⣦</text>
+      <text class="line l3" x="0" y="80">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⠿⠁⠀⠀⠀⢀⣤⣾⣟⣛⣛⣶⣬⣿⣆</text>
+      <text class="line l4" x="0" y="105">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠟⠃⠀⠀⠀⠀⠀⣾⣿⠟⠉⠉⠉⠉⠛⠿⠟</text>
+      <text class="line l5" x="0" y="130">⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡟⠋⠀⠀⠀⠀⠀⠀⠀⣿⡏⣤</text>
+      <text class="line l6" x="0" y="155">⠀⠀⠀⠀⠀⠀⠀⣠⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡍⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣤⣤⣤⣀</text>
+      <text class="line l7" x="0" y="180">⠀⠀⠀⠀⠀⣠⣼⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣤⣤⣠⣤⣤⡤⡶⣶⢿⠟⠹⠿⠄⣿⣿⠏⠀⣀⣤⡦⠀⠀⠀⠀⣀⡄</text>
+      <text class="line l8" x="0" y="205">⢀⣄⣠⣶⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠓⠚⠋⠉⠀⠀⠀⠀⠀⠀⠈⠛⡛⡻⠿⠿⠙⠓⢒⣺⡿⠋⠁</text>
+      <text class="line l9" x="0" y="230">⠉⠉⠉⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁</text>
+    </symbol>
   </defs>
+
   <style>
+    /* Slow Forward Flow with ZERO gaps between segments */
+    @keyframes moveForward {
+      from { transform: translateX(-635px); }
+      to { transform: translateX(0px); }
+    }
+
     @keyframes breakingWaveShift {
       0% { transform: translateY(0px) translateX(0px); }
       33% { transform: translateY(8px) translateX(2px); }
       66% { transform: translateY(-4px) translateX(-2px); }
       100% { transform: translateY(0px) translateX(0px); }
     }
+
+    .moving-container {
+      animation: moveForward 20s linear infinite;
+    }
+
     .line { 
       font-family: 'Courier New', Courier, monospace; 
       font-size: 14px; 
       font-weight: bold;
       fill: url(#waveGradient); 
       animation: breakingWaveShift 5s ease-in-out infinite;
+      /* Prevents browsers from collapsing spaces */
       white-space: pre;
     }
-    /* Staggered delay for each of the 9 lines */
+
+    /* Staggered delay for each line */
     .l1 { animation-delay: 0.1s; }
     .l2 { animation-delay: 0.3s; }
     .l3 { animation-delay: 0.5s; }
@@ -32,13 +59,11 @@
     .l8 { animation-delay: 1.5s; }
     .l9 { animation-delay: 1.7s; }
   </style>
-  <text class="line l1" x="20" y="30">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⠾⠿⠿⠯⣷⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-  <text class="line l2" x="20" y="55">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣾⠛⠁⠀⠀⠀⠀⠀⠀⠈⢻⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-  <text class="line l3" x="20" y="80">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⠿⠁⠀⠀⠀⢀⣤⣾⣟⣛⣛⣶⣬⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-  <text class="line l4" x="20" y="105">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠟⠃⠀⠀⠀⠀⠀⣾⣿⠟⠉⠉⠉⠉⠛⠿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-  <text class="line l5" x="20" y="130">⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡟⠋⠀⠀⠀⠀⠀⠀⠀⣿⡏⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-  <text class="line l6" x="20" y="155">⠀⠀⠀⠀⠀⠀⠀⣠⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡍⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
-  <text class="line l7" x="20" y="180">⠀⠀⠀⠀⠀⣠⣼⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣤⣤⣠⣤⣤⡤⡶⣶⢿⠟⠹⠿⠄⣿⣿⠏⠀⣀⣤⡦⠀⠀⠀⠀⣀⡄</text>
-  <text class="line l8" x="20" y="205">⢀⣄⣠⣶⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠓⠚⠋⠉⠀⠀⠀⠀⠀⠀⠈⠛⡛⡻⠿⠿⠙⠓⢒⣺⡿⠋⠁</text>
-  <text class="line l9" x="20" y="230">⠉⠉⠉⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁⠀</text>
+
+  <g class="moving-container">
+    <!-- Three segments with no overlap and no gaps -->
+    <use href="#waveSegment" x="0" y="0" width="635" height="260" />
+    <use href="#waveSegment" x="635" y="0" width="635" height="260" />
+    <use href="#waveSegment" x="1270" y="0" width="635" height="260" />
+  </g>
 </svg>
