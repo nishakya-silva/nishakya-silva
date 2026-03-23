@@ -22,9 +22,9 @@
   <style>
     /* Keep wave always in view */
     @keyframes moveForward {
-      from { transform: translateX(-250px); }
-      to { transform: translateX(0px); }
-    }
+      from { transform: translateX(0px); }
+      to { transform: translateX(-500px); }
+  }
 
     /* Stronger, more visible wave motion */
     @keyframes breakingWaveShift {
