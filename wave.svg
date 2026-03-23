@@ -1,13 +1,11 @@
 <svg width="1000" height="180" viewBox="0 0 1000 180" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-  <stop offset="0%" style="stop-color:#ade8f4;stop-opacity:1" /> <!-- Lightest Ocean Blue -->
-  <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" /> <!-- White Peak -->
-  <stop offset="100%" style="stop-color:#ade8f4;stop-opacity:1" /> <!-- Lightest Ocean Blue -->
-</linearGradient>
+      <stop offset="0%" style="stop-color:#ade8f4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ade8f4;stop-opacity:1" />
+    </linearGradient>
 
-
-    <!-- Cycle width set to 500px for smaller, tighter connections -->
     <symbol id="waveSegment" viewBox="0 0 500 180">
       <text class="line l1" x="0" y="20">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⠾⠿⠿⠯⣷⣄⡀</text>
       <text class="line l2" x="0" y="38">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣾⠛⠁⠀⠀⠀⠀⠀⠀⠈⢻⣦</text>
@@ -16,52 +14,53 @@
       <text class="line l5" x="0" y="92">⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡟⠋⠀⠀⠀⠀⠀⠀⠀⣿⡏⣤</text>
       <text class="line l6" x="0" y="110">⠀⠀⠀⠀⠀⠀⠀⣠⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡍⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣤⣤⣤⣀</text>
       <text class="line l7" x="0" y="128">⠀⠀⠀⠀⠀⣠⣼⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣤⣤⣠⣤⣤⡤⡶⣶⢿⠟⠹⠿⠄⣿⣿⠏⠀⣀⣤⡦⠀⠀⠀⠀⣀⡄</text>
-      <text class="line l8" x="0" y="146">⢀⣄⣠⣶⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠓⠚⠋⠉⠀⠀⠀⠀⠀⠀⠈⠛⡛⡻⠿⠿⠙⠓⢒⣺⡿⠋⠁   ⠙⠓⢒⣺⡿⠋⠁  ⡻⠿⠿⠙</text>
-      <text class="line l9" x="0" y="164">⠉⠉⠉⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁⠛⡛⡻⠿⠿⠙⠓          </text>
+      <text class="line l8" x="0" y="146">⢀⣄⣠⣶⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠓⠚⠋⠉⠀⠀⠀⠀⠀⠀⠈⠛⡛⡻⠿⠿⠙⠓⢒⣺⡿⠋⠁</text>
+      <text class="line l9" x="0" y="164">⠉⠉⠉⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁</text>
     </symbol>
   </defs>
 
   <style>
-    /* Forward motion slowed to match smaller scale */
+    /* Keep wave always in view */
     @keyframes moveForward {
-      from { transform: translateX(-500px); }
+      from { transform: translateX(-250px); }
       to { transform: translateX(0px); }
     }
 
+    /* Stronger, more visible wave motion */
     @keyframes breakingWaveShift {
       0% { transform: translateY(0px) translateX(0px); }
-      33% { transform: translateY(4px) translateX(1px); }
-      66% { transform: translateY(-2px) translateX(-1px); }
+      25% { transform: translateY(3px) translateX(1px); }
+      50% { transform: translateY(-3px) translateX(-1px); }
+      75% { transform: translateY(2px) translateX(1px); }
       100% { transform: translateY(0px) translateX(0px); }
     }
 
     .moving-container {
-      animation: moveForward 15s linear infinite;
+      animation: moveForward 8s linear infinite; /* faster so it doesn’t disappear */
     }
 
     .line { 
-      /* Smaller Font Size */
-      font-family: 'Courier New', Courier, monospace; 
+      font-family: 'Courier New', monospace; 
       font-size: 11px; 
       font-weight: bold;
       fill: url(#waveGradient); 
-      animation: breakingWaveShift 5s ease-in-out infinite;
+      animation: breakingWaveShift 2.5s ease-in-out infinite; /* faster + more visible */
       white-space: pre;
     }
 
-    .l1 { animation-delay: 0.1s; }
-    .l2 { animation-delay: 0.3s; }
-    .l3 { animation-delay: 0.5s; }
-    .l4 { animation-delay: 0.7s; }
-    .l5 { animation-delay: 0.9s; }
-    .l6 { animation-delay: 1.1s; }
-    .l7 { animation-delay: 1.3s; }
-    .l8 { animation-delay: 1.5s; }
-    .l9 { animation-delay: 1.7s; }
+    /* tighter delays = smoother ripple instead of awkward lag */
+    .l1 { animation-delay: 0s; }
+    .l2 { animation-delay: 0.15s; }
+    .l3 { animation-delay: 0.3s; }
+    .l4 { animation-delay: 0.45s; }
+    .l5 { animation-delay: 0.6s; }
+    .l6 { animation-delay: 0.75s; }
+    .l7 { animation-delay: 0.9s; }
+    .l8 { animation-delay: 1.05s; }
+    .l9 { animation-delay: 1.2s; }
   </style>
 
   <g class="moving-container">
-    <!-- Connecting adjacent waves precisely at 500px -->
     <use href="#waveSegment" x="0" y="0" width="500" height="120" />
     <use href="#waveSegment" x="500" y="0" width="500" height="120" />
     <use href="#waveSegment" x="1000" y="0" width="500" height="120" />
